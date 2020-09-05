@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Docker | MK192的网络日志</title>
-  <meta name="keywords" content=" docker ">
-  <meta name="description" content="Docker | MK192的网络日志">
+  <title>Atom | MK192的网络日志</title>
+  <meta name="keywords" content=" atom ">
+  <meta name="description" content="Atom | MK192的网络日志">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="本人，技术菜鸟一个，17年毕业，至今一无所知，望一直有学习的动力，不被生活打倒。加油！！！">
 <meta property="og:type" content="website">
@@ -737,9 +737,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-Docker" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-Atom" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Docker</h1>
+        <h1 class="article-title">Atom</h1>
     
     <div class="article-meta">
         
@@ -747,23 +747,21 @@
         
         <span class="book">
             
-                <a  data-rel="服务器">服务器</a>/
-            
-                <a  data-rel="Docker">Docker</a>
+                <a  data-rel="工具">工具</a>
             
         </span>
         
         
         <span class="tag">
             
-            <a class="color2">docker</a>
+            <a class="color5">atom</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2020-07-08 14:42:35'>2020-04-20 10:40</time>
+        创建时间:<time class="date" title='更新时间: 2020-09-05 11:33:09'>2020-09-05 11:21</time>
         
     </div>
     <div class="article-meta">
@@ -785,7 +783,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#目录"><span class="toc-text">目录</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#查看Linux版本"><span class="toc-text">查看Linux版本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#docker基本操作命令"><span class="toc-text">docker基本操作命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装mysql"><span class="toc-text">安装mysql</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装apache"><span class="toc-text">安装apache</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装nginx"><span class="toc-text">安装nginx</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装php"><span class="toc-text">安装php</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装mongodb"><span class="toc-text">安装mongodb</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装elk"><span class="toc-text">安装elk</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Atom工具"><span class="toc-text">Atom工具</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -801,125 +799,40 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="目录">目录</h2>
+        <h2 id="Atom工具">Atom工具</h2>
+<ol>
+<li>
+<p>介绍和安装<br>
+Atom 是 Github 开源的文本编辑器，这个编辑器完全是使用Web技术构建的(基于Node-Webkit)。启动速度快，提供很多常用功能的插件和主题，可以说Atom已经足以胜任“半个IDE”了。<br>
+进入<a href="https://atom.io/" target="_blank" rel="noopener">官网</a>，下载安装。</p>
+</li>
+<li>
+<p>常用插件</p>
+</li>
+</ol>
 <ul>
-<li><a href="#%E6%9F%A5%E7%9C%8BLinux%E7%89%88%E6%9C%AC">查看Linux版本</a></li>
-<li><a href="#docker%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4">docker基本操作命令</a></li>
-<li><a href="#%E5%AE%89%E8%A3%85mysql">安装mysql</a></li>
-<li><a href="#%E5%AE%89%E8%A3%85apache">安装apache</a></li>
-<li><a href="#%E5%AE%89%E8%A3%85nginx">安装nginx</a></li>
-<li><a href="#%E5%AE%89%E8%A3%85php">安装php</a></li>
-<li><a href="#%E5%AE%89%E8%A3%85mongodb">安装mongodb</a></li>
-<li><a href="#%E5%AE%89%E8%A3%85elk">安装elk</a></li>
+<li>simplified-chinese-menu ATOM的汉化插件</li>
+<li>file-icons 文件图标美化</li>
+<li>atom-beautify 代码格式一键美化</li>
+<li>last-cursor-position 光标自由切换到上一次/下一次编辑位置</li>
+<li>minimap 代码小地图</li>
+<li>sync-settings 插件备份、按键绑定备份</li>
+<li>activate-power-mode 输入时有震撼效果</li>
 </ul>
-<h3 id="查看Linux版本">查看Linux版本</h3>
-<pre><code class="language-bash"># 看当前操作系统版本信息
-$ cat /proc/version   
-# 查看版本当前操作系统内核信息    
-$ uname -a        
-# 查看版本当前操作系统发行信息        
-$ cat /etc/issue          
+<ol start="3">
+<li>进入路径C:\Windows\System32\cmd.exe</li>
+</ol>
+<pre><code class="language-bash">apm config set registry http://registry.npm.taobao.org
 </code></pre>
-<h3 id="docker基本操作命令">docker基本操作命令</h3>
-<pre><code class="language-bash"># 查看镜像
-$ docker images      
-# 查看正在运行的容器     
-$ docker ps        
-# 查看所有状态的容器      
-$ docker ps -a            
-# 进入容器内，容器不会退出
-$ docker exec -it 容器名 /bin/bash  
-
-# 开启容器
-$ docker start 容器名     
-# 停止容器
-$ docker stop 容器名      
-# 移除容器
-$ docker rm -f 容器名     
-# 删除镜像
-$ docker rmi 镜像名或者ID     
-
-# 创建容器时没有添加参数  --restart=always ，导致的后果是：当 Docker 重启时，容器未能自动启动。如果忘记，可以如下操作：
-$ docker container update --restart=always 容器名字
-
-# 启动apache
-$ docker run -it -v d:/docker/apache/www:/data/code/www -p 8080:80 --name lamp -d apache2.4-php5.6:v2
-# 相关参数解释
-# -i 交互 -t 控制台 -v 路径 本地路径:虚拟机路径 -p 端口 --name 别名 -d 后台运行
-</code></pre>
-<h3 id="安装mysql">安装mysql</h3>
-<pre><code class="language-bash">$ docker run -d -p 3306:3306 --privileged=true -v /d/docker/mysql57:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 --name mysql --restart=always mysql:5.7
-# d:/docker目录	对应/d/docker
-</code></pre>
-<p><a href="https://blog.csdn.net/Alalafan/article/details/81358551" target="_blank" rel="noopener">Docker MySql报2059错误: Authentication plugin ‘caching_sha2_password’ cannot be loaded</a></p>
-<pre><code class="language-bash">$ ALTER USER 'root' IDENTIFIED WITH mysql_native_password BY '123456';
-</code></pre>
-<h3 id="安装apache">安装apache</h3>
-<pre><code class="language-bash"># 运行httpd容器
-$ docker run -d -p 8080:80 --name httpd2.4 httpd
-# 拷贝配置文件
-$ docker cp httpd2.4:/usr/local/apache2/conf/httpd.conf /d/docker/apache2/conf
-# 停止容器
-$ docker stop httpd2.4
-# 移除容器
-$ docker rm -f httpd2.4
-# 再运行httpd容器
-$ docker run -d -p 80:80 -v /d/docker/apache2/www:/usr/local/apache2/htdocs/ -v /d/docker/apache2/conf/httpd.conf:/usr/local/apache2/conf/httpd.conf -v /d/docker/apache2/logs:/usr/local/apache2/logs --name apache2 [--restart=always,--link php56-fpm:php,...] httpd
-# 注意:要先拷贝httpd.conf配置文件出来，不然会报错
-</code></pre>
-<h3 id="安装nginx">安装nginx</h3>
-<pre><code class="language-bash">$ docker run -d -p 80:80 -v /d/docker/nginx/www:/usr/share/nginx/html -v /d/docker/nginx/conf/conf.d:/etc/nginx/conf.d -v /d/docker/nginx/logs:/var/log/nginx [--restart=always,--link myphp-fpm:php] --name nginx nginx
-</code></pre>
-<h3 id="安装php">安装php</h3>
-<pre><code class="language-bash">$ docker run -d -v /d/docker/apache2/www:/www --name php56-fpm [--restart=always,--link mysql] php:5.6-fpm
-</code></pre>
-<h3 id="安装mongodb">安装mongodb</h3>
-<pre><code class="language-bash"># 拉取mongo
-$ docker pull mongo
-# 运行镜像
-$ docker run --name mongodb -it -d (--v /mongodb/data:/data/db) mongo
-# 进入mongo容器
-$ docker exec -it mongodb /bin/bash
-# 打开mongo
-$ mongo
-# 创建管理账户
-$ use admin
-$ db.createUser({user:&quot;admin&quot;,pwd:&quot;123456&quot;,roles:[{role:&quot;root&quot;,db:&quot;admin&quot;}]});
-# 以刚才创建的账户登录
-$ mongo --port 27017 -u admin -p 123456 --authenticationDatabase admin
-# 显示数据库
-$ show dbs 
-# 切换到数据库
-$ use dbname
-# 显示表
-$ show collections
-</code></pre>
-<h3 id="安装elk">安装elk</h3>
-<pre><code class="language-bash"># 下载镜像
-$ docker pull sebp/elk
-# 启动镜像, 指定es的内存
-$ docker run -e ES_JAVA_OPTS=&quot;-Xms256m -Xmx256m&quot; -p 5601:5601 -p 5044:5044 -p 9200:9200 -p 9300:9300 -it -d --name elk 
-# 通过exec命令进入容器
-$ docker exec -it elk /bin/bash
-# 进入容器修改配置文件
-$ vim /etc/logstash/conf.d/02-beats-input.conf
-# 如下
-# input {
-#     tcp {
-#         port =&gt; 5044
-#         codec =&gt; json_lines
-#     }
-# }
-# output {
-#     elasticsearch {
-#     	hosts =&gt; [&quot;localhost:9200&quot;]
-#     }
-# }
-# 退出
-$ exit
-# 然后重启容器，让我们的配置生效。
-$ docker restart elk
-# 访问 http://127.0.0.1:5601
+<ol start="4">
+<li>安装插件</li>
+</ol>
+<pre><code class="language-bash"># 搜索插件
+apm search atom-beautify
+# 安装插件
+apm i atom-beautify
+# 卸载插件
+apm uninstall atom-beautify
 </code></pre>
 
       
@@ -934,12 +847,12 @@ $ docker restart elk
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>Docker</p>
+    <p><span class="copy-title">文章标题:</span>Atom</p>
     
     <p><span class="copy-title">本文作者:</span><a  title="MK192">MK192</a></p>
-    <p><span class="copy-title">发布时间:</span>2020-04-20, 10:40:36</p>
-    <p><span class="copy-title">最后更新:</span>2020-07-08, 14:42:35</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/04/20/Docker/" title="Docker">https://yzhengwang.github.io/2020/04/20/Docker/</a>
+    <p><span class="copy-title">发布时间:</span>2020-09-05, 11:21:36</p>
+    <p><span class="copy-title">最后更新:</span>2020-09-05, 11:33:09</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/09/05/Atom/" title="Atom">https://yzhengwang.github.io/2020/09/05/Atom/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
