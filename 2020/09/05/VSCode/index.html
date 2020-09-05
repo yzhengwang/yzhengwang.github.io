@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Atom | MK192的网络日志</title>
-  <meta name="keywords" content=" atom ">
-  <meta name="description" content="Atom | MK192的网络日志">
+  <title>VSCode | MK192的网络日志</title>
+  <meta name="keywords" content=" VSCode ">
+  <meta name="description" content="VSCode | MK192的网络日志">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="本人，技术菜鸟一个，17年毕业，至今一无所知，望一直有学习的动力，不被生活打倒。加油！！！">
 <meta property="og:type" content="website">
@@ -749,9 +749,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-Atom" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-VSCode" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Atom</h1>
+        <h1 class="article-title">VSCode</h1>
     
     <div class="article-meta">
         
@@ -766,14 +766,14 @@
         
         <span class="tag">
             
-            <a class="color5">atom</a>
+            <a class="color2">VSCode</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2020-09-05 16:39:22'>2020-09-05 11:21</time>
+        创建时间:<time class="date" title='更新时间: 2020-09-05 16:36:50'>2020-09-05 16:12</time>
         
     </div>
     <div class="article-meta">
@@ -795,7 +795,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Atom工具"><span class="toc-text">Atom工具</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#为什么使用VSCode？"><span class="toc-text">为什么使用VSCode？</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、常用快捷键"><span class="toc-text">一、常用快捷键</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、前端开发必备插件"><span class="toc-text">二、前端开发必备插件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三、其它设置"><span class="toc-text">三、其它设置</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -811,41 +811,136 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Atom工具">Atom工具</h2>
-<ol>
-<li>
-<p>介绍和安装<br>
-Atom 是 Github 开源的文本编辑器，这个编辑器完全是使用Web技术构建的(基于Node-Webkit)。启动速度快，提供很多常用功能的插件和主题，可以说Atom已经足以胜任“半个IDE”了。<br>
-进入<a href="https://atom.io/" target="_blank" rel="noopener">官网</a>，下载安装。</p>
-</li>
-<li>
-<p>常用插件</p>
-</li>
-</ol>
+        <h2 id="为什么使用VSCode？">为什么使用VSCode？</h2>
 <ul>
-<li>simplified-chinese-menu ATOM的汉化插件</li>
-<li>file-icons 文件图标美化</li>
-<li>atom-beautify 代码格式一键美化</li>
-<li>last-cursor-position 光标自由切换到上一次/下一次编辑位置</li>
-<li>minimap 代码小地图</li>
-<li>sync-settings 插件备份、按键绑定备份</li>
-<li>activate-power-mode 输入时有震撼效果</li>
+<li>开源，免费，颜值高</li>
+<li>微软出品，实力保证</li>
 </ul>
-<ol start="3">
-<li>进入路径C:\Windows\System32\cmd.exe</li>
-</ol>
-<pre><code class="language-bash">apm config set registry http://registry.npm.taobao.org
-</code></pre>
-<ol start="4">
-<li>安装插件</li>
-</ol>
-<pre><code class="language-bash"># 搜索插件
-apm search atom-beautify
-# 安装插件
-apm i atom-beautify
-# 卸载插件
-apm uninstall atom-beautify
-</code></pre>
+<h3 id="一、常用快捷键">一、常用快捷键</h3>
+<ul>
+<li>
+<p>主命令框<br>
+F1 或 Ctrl+Shift+P: 打开命令面板。在打开的输入框内，可以输入任何命令，例如：</p>
+<ul>
+<li>按一下 Backspace 会进入到 Ctrl+P 模式</li>
+<li>在 Ctrl+P 下输入 &gt; 可以进入 Ctrl+Shift+P 模式</li>
+<li>在 Ctrl+P 窗口下还可以：
+<ul>
+<li>直接输入文件名，跳转到文件</li>
+<li>? 列出当前可执行的动作</li>
+<li>! 显示 Errors或 Warnings，也可以 Ctrl+Shift+M</li>
+<li>: 跳转到行数，也可以 Ctrl+G 直接进入</li>
+<li>@ 跳转到 symbol（搜索变量或者函数），也可以 Ctrl+Shift+O 直接进入</li>
+<li>@ 根据分类跳转 symbol，查找属性或函数，也可以 Ctrl+Shift+O 后输入:进入</li>
+<li>#根据名字查找 symbol，也可以 Ctrl+T</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>编辑器与窗口管理</p>
+<ul>
+<li>打开一个新窗口： Ctrl+Shift+N</li>
+<li>关闭窗口： Ctrl+Shift+W</li>
+<li>同时打开多个编辑器（查看多个文件）</li>
+<li>新建文件 Ctrl+N</li>
+<li>文件之间切换 Ctrl+Tab</li>
+<li>切出一个新的编辑器（最多 3 个） Ctrl+\，也可以按住 Ctrl 鼠标点击 Explorer 里的文件名</li>
+<li>左中右 3 个编辑器的快捷键 Ctrl+1 Ctrl+2 Ctrl+3</li>
+<li>3 个编辑器之间循环切换 Ctrl+</li>
+<li>编辑器换位置， Ctrl+k然后按 Left或 Right</li>
+</ul>
+</li>
+<li>
+<p>代码编辑</p>
+<ul>
+<li>格式调整
+<ul>
+<li>代码行缩进 Ctrl+[ 、 Ctrl+]</li>
+<li>Ctrl+C 、 Ctrl+V 复制或剪切当前行/当前选中内容</li>
+<li>代码格式化： Shift+Alt+F，或 Ctrl+Shift+P 后输入 format code</li>
+<li>上下移动一行： Alt+Up 或 Alt+Down</li>
+<li>向上向下复制一行： Shift+Alt+Up 或 Shift+Alt+Down</li>
+<li>在当前行下边插入一行 Ctrl+Enter</li>
+<li>在当前行上方插入一行 Ctrl+Shift+Enter</li>
+</ul>
+</li>
+<li>光标相关
+<ul>
+<li>移动到行首： Home</li>
+<li>移动到行尾： End</li>
+<li>移动到文件结尾： Ctrl+End</li>
+<li>移动到文件开头： Ctrl+Home</li>
+<li>移动到定义处： F12</li>
+<li>定义处缩略图：只看一眼而不跳转过去 Alt+F12</li>
+<li>移动到后半个括号： Ctrl+Shift+]</li>
+<li>选择从光标到行尾： Shift+End</li>
+<li>选择从行首到光标处： Shift+Home</li>
+<li>删除光标右侧的所有字： Ctrl+Delete</li>
+<li>扩展/缩小选取范围： Shift+Alt+Left 和 Shift+Alt+Right</li>
+<li>多行编辑(列编辑)：Alt+Shift+鼠标左键，Ctrl+Alt+Down/Up</li>
+<li>同时选中所有匹配： Ctrl+Shift+L</li>
+<li>Ctrl+D 下一个匹配的也被选中 (在 sublime 中是删除当前行，后面- 自定义快键键中，设置与 Ctrl+Shift+K 互换了)</li>
+<li>回退上一个光标操作： Ctrl+U</li>
+</ul>
+</li>
+<li>重构代码
+<ul>
+<li>找到所有的引用： Shift+F12</li>
+<li>同时修改本文件中所有匹配的： Ctrl+F12</li>
+<li>重命名：比如要修改一个方法名，可以选中后按 F2，输入新的名字，回车，会发现所有的文件都修改了</li>
+<li>跳转到下一个 Error 或 Warning：当有多个错误时可以按 F8 逐个跳转</li>
+<li>查看 diff： 在 explorer 里选择文件右键 Set file to compare，- 然后需要对比的文件上右键选择 Compare with file_name_you_chose</li>
+</ul>
+</li>
+<li>查找替换
+<ul>
+<li>查找 Ctrl+F</li>
+<li>查找替换 Ctrl+H</li>
+<li>整个文件夹中查找 Ctrl+Shift+F</li>
+</ul>
+</li>
+<li>显示相关
+<ul>
+<li>全屏：F11</li>
+<li>zoomIn/zoomOut：Ctrl +/-</li>
+<li>侧边栏显/隐：Ctrl+B</li>
+<li>显示资源管理器 Ctrl+Shift+E</li>
+<li>显示搜索 Ctrl+Shift+F</li>
+<li>显示 Git Ctrl+Shift+G</li>
+<li>显示 Debug Ctrl+Shift+D</li>
+<li>显示 Output Ctrl+Shift+U</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="二、前端开发必备插件">二、前端开发必备插件</h3>
+<ul>
+<li>PostCSS Sorting</li>
+<li>stylelint</li>
+<li>stylefmt</li>
+<li>ESLint</li>
+<li>javascript standard format</li>
+<li>beautify</li>
+<li>Babel ES6/ES7</li>
+<li>Debugger for Chrome</li>
+<li>Add jsdoc comments</li>
+<li>javascript(ES6) code snippets</li>
+<li>vue</li>
+<li>weex</li>
+<li>Reactjs code snippets</li>
+<li>React Native Tools</li>
+<li>Npm Intellisense</li>
+<li>Instant Markdown</li>
+<li>Markdown Shortcuts</li>
+<li>TextTransform</li>
+</ul>
+<h3 id="三、其它设置">三、其它设置</h3>
+<ul>
+<li>控制树缩进<br>
+设置路径：设置&gt;工作台&gt;外观</li>
+</ul>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 1402205524@qq.com </span>
@@ -859,12 +954,12 @@ apm uninstall atom-beautify
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>Atom</p>
+    <p><span class="copy-title">文章标题:</span>VSCode</p>
     
     <p><span class="copy-title">本文作者:</span><a  title="MK192">MK192</a></p>
-    <p><span class="copy-title">发布时间:</span>2020-09-05, 11:21:36</p>
-    <p><span class="copy-title">最后更新:</span>2020-09-05, 16:39:22</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/09/05/Atom/" title="Atom">https://yzhengwang.github.io/2020/09/05/Atom/</a>
+    <p><span class="copy-title">发布时间:</span>2020-09-05, 16:12:43</p>
+    <p><span class="copy-title">最后更新:</span>2020-09-05, 16:36:50</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/09/05/VSCode/" title="VSCode">https://yzhengwang.github.io/2020/09/05/VSCode/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
