@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>MK192的网络日志</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="MK192的网络日志">
+  <title>MySQL | MK192的网络日志</title>
+  <meta name="keywords" content=" MySQL ">
+  <meta name="description" content="MySQL | MK192的网络日志">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="本人，技术菜鸟一个，17年毕业，至今一无所知，望一直有学习的动力，不被生活打倒。加油！！！">
 <meta property="og:type" content="website">
@@ -52,7 +52,7 @@
 </div>
 
 <body>
-<aside class="nav mobile">
+<aside class="nav">
     <div class="nav-left">
         <a href="/" class="avatar_target">
     <img class="avatar" src="/img/avatar.jpg" />
@@ -175,12 +175,49 @@
         </div>
     </div>
 </aside>
-<div class="post index">
+<div class="post">
     <div class="pjax">
-        <article class="index">
-            <div class="toc-ref">
+        <article id="post-Mysql" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#让人迷茫的原因只有一个，那就是本该拼搏的年纪，却想得太多，做得太少！"><span class="toc-text">让人迷茫的原因只有一个，那就是本该拼搏的年纪，却想得太多，做得太少！</span></a></li></ol>
+        <h1 class="article-title">MySQL</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        
+        <span class="tag">
+            
+            <a class="color1">MySQL</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2021-11-11 00:51:43'>2021-11-11 00:47</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读:<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#MySQL安装"><span class="toc-text">MySQL安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#死锁解决"><span class="toc-text">死锁解决</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -193,54 +230,127 @@
     }
 </style>
 </div>
-            <h3 id="让人迷茫的原因只有一个，那就是本该拼搏的年纪，却想得太多，做得太少！"><code>让人迷茫的原因只有一个，那就是本该拼搏的年纪，却想得太多，做得太少！</code></h3>
-<pre><code class="language-java">                                             致橡树
-                                    我如果爱你——
-                                        绝不象攀援的凌霄花，
-                                    借你的高枝炫耀自己；
-                                        我如果爱你——
-                                    绝不学痴情的鸟儿，
-                                        为绿荫重复单调的歌曲；
-                                            也不止象泉源，
-                                    常年送来清凉的慰藉；
-                                            也不止象险峰，
-                                            增加你的高度，衬托你的威仪。
-                                                甚至日光。
-                                            甚至春雨。
-                                        不，这些都还不够！
-                                    我必须是你近旁的一株木棉，
-                                            作为树的形象和你站在一起。
-                                        根，紧握在地下，
-                                            叶，相触在云里。
-                                                每一阵风过，
-                                            我们都互相致意，
-                                                但没有人，
-                                            听懂我们的言语。
-                                                你有你的铜枝铁干，
-                                            象刀，象剑，
-                                                也象戟；
-                                            我有我红硕的花朵，
-                                        象沉重的叹息，
-                                            又象英勇的火炬。
-                                                我们分担寒潮、风雷、霹雳；
-                                    我们共享雾霭、流岚、虹霓。
-                                        仿佛永远分离，
-                                                却又终身相依。
-                                            这才是伟大的爱情，
-                                                坚贞就在这里：
-                                                爱——
-                                            不仅爱你伟岸的身躯，
-                                        也爱你坚持的位置，足下的土地。
-                                                ————舒婷
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="MySQL安装">MySQL安装</h3>
+<pre><code class="language-bash"># 在MySQL官网中下载YUM源rpm安装包：https://dev.mysql.com/downloads/repo/yum/
+# 下载源
+$ wget http://dev.mysql.com/get/mysql57-community-release-el7-8.noarch.rpm
+# 安装源
+$ yum localinstall mysql57-community-release-el7-8.noarch.rpm
+# 查看是否已安装成功
+$ yum repolist enabled | grep &quot;mysql.*-community.*&quot;（有问题）
+# 安装
+$ yum install mysql-community-server
+# 启动/查看/开启/关闭MySQL服务
+$ systemctl start/status/enable/stop mysqld
+# 平滑重启MySQL
+$ systemctl daemon-reload
+# mysql安装完成之后，在/var/log/mysqld.log文件中给root生成了一个默认密码
+$ grep 'temporary password' /var/log/mysqld.log
+# 登录MySQL
+$ mysql -u root -p
+# 修改密码
+$ ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass4!';
+# 或者
+$ set password for 'root'@'localhost'=password('MyNewPass4!'); 
+
+# 通过msyql环境变量可以查看密码策略的相关信息
+$ show variables like '%password%';
+
+# 修改密码策略
+# 在/etc/my.cnf文件添加validate_password_policy配置，指定密码策略
+# 选择0（LOW），1（MEDIUM），2（STRONG）其中一种，选择2需要提供密码字典文件
+# validate_password_policy=0
+# 如果不需要密码策略，添加my.cnf文件中添加如下配置禁用即可：
+# validate_password = off
+# 重新启动mysql服务使配置生效：
+$ systemctl restart mysqld
+
+# 配置文件目录：/etc/my.cnf
+# 日志文件目录：/var/log//var/log/mysqld.log
+# 服务启动脚本：/usr/lib/systemd/system/mysqld.service
+# socket文件：/var/run/mysqld/mysqld.pid
+
+# 如果忘记root密码，则按如下操作恢复：
+# 在[mysqld]的段中加上一句：skip-grant-tables 保存并且退出vi。
+$ mysql -u root
+$ update mysql.user set authentication_string=password('123qwe') where user='root' and Host = 'localhost';
+$ flush privileges
+
+# 用mysqlguitools远程登录的时候出错，提示：Host 'xxx' is not allowed to connect to this MySQL server
+# 登录MySQL
+$ mysql -uroot -p
+$ use mysql
+$ select host,user,password from user; 
+# 第一种（改表法）
+$ update user set host = '%' where user = 'root';
+$ FLUSH PRIVILEGES;
+# 第二种（授权法）
+$ GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'mypassword' WITH GRANT OPTION; 
+# 如果你想允许用户myuser从ip为192.168.1.3的主机连接到mysql服务器，并使用mypassword作为密码
+$ GRANT ALL PRIVILEGES ON *.* TO 'root'@'192.168.1.3' IDENTIFIED BY 'mypassword' WITH GRANT OPTION; 
+$ FLUSH PRIVILEGES; 
+# [参考](https://www.cnblogs.com/ianduin/p/7679239.html)
+# [Navicat连接数据库报无访问权限](https://www.cnblogs.com/vathena/p/4012399.html)
+</code></pre>
+<h3 id="死锁解决">死锁解决</h3>
+<pre><code class="language-bash">SELECT * FROM information_schema.INNODB_TRX;
+trx_rows_locked: 事务锁定行数
+trx_rows_modified: 事务修改行数
+
+#首先查询是否锁表
+SHOW OPEN TABLES WHERE In_use &gt; 0;
+
+#查询进程,保证拥有超级管理员权限
+SHOW PROCESSLIST;
+
+#杀死进程
+KILL 4503;
+
+#查看正在锁的事务
+SELECT * FROM INFORMATION_SCHEMA.INNODB_LOCKS;
+
+#查看等待锁的事务
+SELECT * FROM INFORMATION_SCHEMA.INNODB_LOCK_WAITS;
+
+#退出
+exit;
 </code></pre>
 
-        </article>
-        
-        <p>
-            <a  class="dashang" onclick="dashangToggle()">赏</a>
-        </p>
-        
-        
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 1402205524@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>MySQL</p>
+    
+    <p><span class="copy-title">本文作者:</span><a  title="MK192">MK192</a></p>
+    <p><span class="copy-title">发布时间:</span>2021-11-11, 00:47:31</p>
+    <p><span class="copy-title">最后更新:</span>2021-11-11, 00:51:43</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2021/11/11/Mysql/" title="MySQL">https://yzhengwang.github.io/2021/11/11/Mysql/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+
+
+
+
+
+    
+
+
+
+
     </div>
     <div class="copyright">
         <p class="footer-entry">©2017-2020 MK192</p>

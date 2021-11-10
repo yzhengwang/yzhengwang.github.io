@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>MK192的网络日志</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="MK192的网络日志">
+  <title>Create-Hexo | MK192的网络日志</title>
+  <meta name="keywords" content=" hexo ">
+  <meta name="description" content="Create-Hexo | MK192的网络日志">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="本人，技术菜鸟一个，17年毕业，至今一无所知，望一直有学习的动力，不被生活打倒。加油！！！">
 <meta property="og:type" content="website">
@@ -52,7 +52,7 @@
 </div>
 
 <body>
-<aside class="nav mobile">
+<aside class="nav">
     <div class="nav-left">
         <a href="/" class="avatar_target">
     <img class="avatar" src="/img/avatar.jpg" />
@@ -175,12 +175,55 @@
         </div>
     </div>
 </aside>
-<div class="post index">
+<div class="post">
     <div class="pjax">
-        <article class="index">
-            <div class="toc-ref">
+        <article id="post-Hexo" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#让人迷茫的原因只有一个，那就是本该拼搏的年纪，却想得太多，做得太少！"><span class="toc-text">让人迷茫的原因只有一个，那就是本该拼搏的年纪，却想得太多，做得太少！</span></a></li></ol>
+        <h1 class="article-title">Create-Hexo</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            
+                <a  data-rel="前端">前端</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a class="color5">hexo</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2020-06-25 03:03:06'>2020-05-12 16:51</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读:<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#"><span class="toc-text">创建hexo</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -193,54 +236,101 @@
     }
 </style>
 </div>
-            <h3 id="让人迷茫的原因只有一个，那就是本该拼搏的年纪，却想得太多，做得太少！"><code>让人迷茫的原因只有一个，那就是本该拼搏的年纪，却想得太多，做得太少！</code></h3>
-<pre><code class="language-java">                                             致橡树
-                                    我如果爱你——
-                                        绝不象攀援的凌霄花，
-                                    借你的高枝炫耀自己；
-                                        我如果爱你——
-                                    绝不学痴情的鸟儿，
-                                        为绿荫重复单调的歌曲；
-                                            也不止象泉源，
-                                    常年送来清凉的慰藉；
-                                            也不止象险峰，
-                                            增加你的高度，衬托你的威仪。
-                                                甚至日光。
-                                            甚至春雨。
-                                        不，这些都还不够！
-                                    我必须是你近旁的一株木棉，
-                                            作为树的形象和你站在一起。
-                                        根，紧握在地下，
-                                            叶，相触在云里。
-                                                每一阵风过，
-                                            我们都互相致意，
-                                                但没有人，
-                                            听懂我们的言语。
-                                                你有你的铜枝铁干，
-                                            象刀，象剑，
-                                                也象戟；
-                                            我有我红硕的花朵，
-                                        象沉重的叹息，
-                                            又象英勇的火炬。
-                                                我们分担寒潮、风雷、霹雳；
-                                    我们共享雾霭、流岚、虹霓。
-                                        仿佛永远分离，
-                                                却又终身相依。
-                                            这才是伟大的爱情，
-                                                坚贞就在这里：
-                                                爱——
-                                            不仅爱你伟岸的身躯，
-                                        也爱你坚持的位置，足下的土地。
-                                                ————舒婷
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1>创建hexo</h1>
+<ol>
+<li>创建仓库</li>
+</ol>
+<p>在 github 新建一个仓库，仓库名必须为 <a href="http://yzhengwang.github.io">yzhengwang.github.io</a> 格式，其中 yzhengwang 是你 github 的名称。</p>
+<ol start="2">
+<li>安装hexo</li>
+</ol>
+<p>npm install -g hexo</p>
+<ol start="3">
+<li>初始化项目</li>
+</ol>
+<p>hexo init，会自动构建一个 hexo 项目，执行 hexo s，浏览器访问 localhost:4000 就可以看到效果！</p>
+<ol start="4">
+<li>部署到github</li>
+</ol>
+<p>在项目根目录下找到 _congif.yml，找到 deploy 字段并填写完整。</p>
+<pre><code class="language-md">deploy:  
+  type: git  
+  repo: &lt;你的仓库地址&gt; # git@github.com:yzhengwang/yzhengwang.github.io.git  
+  branch: master
 </code></pre>
+<p>我们需要额外的一个工具来帮助我们推到仓库上，hexo-deployer-git。</p>
+<pre><code class="language-bash">$ npm install hexo-deployer-git --save  
+$ hexo clean  
+$ hexo deploy  
+</code></pre>
+<p>浏览器访问：<a href="https://yzhengwang.github.io/">https://yzhengwang.github.io/</a> 即可看到效果。</p>
+<ol start="5">
+<li>创建新文章</li>
+</ol>
+<pre><code class="language-bash"># [layout] 为布局，可选项为 `post`、`page`、`draft`，这将决定文章所在文件路径。
+# &lt;title&gt; 为文章标题
+# 如 hexo new post 
+$ hexo new [layout] &lt;title&gt;
+</code></pre>
+<ol start="6">
+<li>更换主题皮肤</li>
+</ol>
+<ul>
+<li>下载到themes文件夹下<br>
+git clone <a href="https://github.com/KevinOfNeu/hexo-theme-tttt" target="_blank" rel="noopener">https://github.com/KevinOfNeu/hexo-theme-tttt</a> tttt</li>
+<li>修改 _config.yml 配置<br>
+theme: tttt</li>
+</ul>
+<ol start="7">
+<li>部署优化</li>
+</ol>
+<p>每次都要执行 hexo clean 和 hexo deploy，不如写个新的脚本</p>
+<pre><code class="language-json">// package.json  
+&quot;dev&quot;: &quot;hexo s&quot;,  
+&quot;build&quot;: &quot;hexo clean &amp; hexo deploy&quot;  
+</code></pre>
+<p>部署命令</p>
+<pre><code class="language-bash">$ npm run build
+</code></pre>
+<ol start="8">
+<li>接入评论系统 - valine</li>
+</ol>
 
-        </article>
-        
-        <p>
-            <a  class="dashang" onclick="dashangToggle()">赏</a>
-        </p>
-        
-        
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 1402205524@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>Create-Hexo</p>
+    
+    <p><span class="copy-title">本文作者:</span><a  title="MK192">MK192</a></p>
+    <p><span class="copy-title">发布时间:</span>2020-05-12, 16:51:24</p>
+    <p><span class="copy-title">最后更新:</span>2020-06-25, 03:03:06</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/05/12/Hexo/" title="Create-Hexo">https://yzhengwang.github.io/2020/05/12/Hexo/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+
+
+
+
+
+    
+
+
+
+
     </div>
     <div class="copyright">
         <p class="footer-entry">©2017-2020 MK192</p>
